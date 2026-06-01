@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Work | JUNGMINI FACTORY</title>
+    <meta name="description" content="Jungmini work detail" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="detail-header">
+        <div class="home-top">
+          <a class="site-title" href="./index.html">JUNGMINI FACTORY</a>
+          <nav class="language-nav" aria-label="Language">
+            <a href="#ko">KO</a>
+            <span>/</span>
+            <a href="#en">EN</a>
+          </nav>
+        </div>
+
+        <nav class="detail-nav" aria-label="Main navigation">
+          <a href="./index.html#catalogue">Works</a>
+          <a href="./index.html#events">Events</a>
+          <a href="./index.html#goods">Goods</a>
+          <a href="./index.html#characters">Characters</a>
+          <a href="./index.html#about">About</a>
+          <a href="./index.html#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main class="work-detail" id="work-detail">
+        <p class="breadcrumb">
+          <a href="./index.html#catalogue">Works</a> / <span id="detail-id"></span>
+        </p>
+
+        <section class="detail-layout">
+          <figure class="detail-image-wrap">
+            <img id="detail-image" src="" alt="" />
+          </figure>
+
+          <div class="detail-info">
+            <p class="eyebrow" id="detail-number"></p>
+            <h1 id="detail-title"></h1>
+            <dl class="meta-list">
+              <div>
+                <dt>Year</dt>
+                <dd id="detail-year"></dd>
+              </div>
+              <div>
+                <dt>Category</dt>
+                <dd id="detail-category"></dd>
+              </div>
+              <div>
+                <dt>Format</dt>
+                <dd id="detail-format"></dd>
+              </div>
+              <div>
+                <dt>Note</dt>
+                <dd id="detail-note"></dd>
+              </div>
+            </dl>
+
+            <a class="pdf-link" id="detail-pdf" href="">Open PDF</a>
+          </div>
+        </section>
+
+        <nav class="detail-pager" aria-label="Work navigation">
+          <a id="prev-work" href="./index.html#catalogue">Previous</a>
+          <a href="./index.html#catalogue">Works</a>
+          <a id="next-work" href="./index.html#catalogue">Next</a>
+        </nav>
+      </main>
+
+      <footer class="site-footer">
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="#terms">Terms of Use</a>
+          <a href="#privacy">Privacy Policy</a>
+          <a href="#credits">Credits</a>
+          <a href="mailto:hello@atelier-miro.com">Inquiries</a>
+          <a href="https://instagram.com" target="_blank" rel="noreferrer">
+            Instagram
+          </a>
+        </nav>
+        <p>© 2026 Jungmini. All rights reserved.</p>
+      </footer>
+    </div>
+
+    <script src="./work.js"></script>
+  </body>
+</html>
