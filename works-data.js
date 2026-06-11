@@ -1,7 +1,7 @@
 window.JUNGMINI_WORKS = [
   {
     "id": "personal-gemini-generated-image-5okxiy5okxiy5okx",
-    "title": "Gemini Generated Image 5okxiy5okxiy5okx",
+    "title": "Kitty on My Hat 🐱🎩",
     "year": "2026",
     "category": "Personal Work",
     "format": "Image",
@@ -15,7 +15,7 @@ window.JUNGMINI_WORKS = [
   },
   {
     "id": "personal-gemini-generated-image-h9m3mdh9m3mdh9m3",
-    "title": "Gemini Generated Image H9m3mdh9m3mdh9m3",
+    "title": "Kitty on My Hat 🐱🎩",
     "year": "2026",
     "category": "Personal Work",
     "format": "Image",

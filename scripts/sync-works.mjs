@@ -54,6 +54,11 @@ const titleize = (value) =>
     .trim()
     .replace(/\b[a-z]/g, (letter) => letter.toUpperCase());
 
+const customTitles = new Map([
+  ["personal-gemini-generated-image-5okxiy5okxiy5okx", "Kitty on My Hat 🐱🎩"],
+  ["personal-gemini-generated-image-h9m3mdh9m3mdh9m3", "Kitty on My Hat 🐱🎩"],
+]);
+
 const works = [];
 
 const addFolderWorks = (folder, category) => {
@@ -76,9 +81,10 @@ const addFolderWorks = (folder, category) => {
     const extension = extname(file).toLowerCase();
     if (!imageExtensions.has(extension)) continue;
 
-    const title = titleize(file);
+    const id = `${folder}-${slugify(file)}`;
+    const title = customTitles.get(id) || titleize(file);
     works.push({
-      id: `${folder}-${slugify(file)}`,
+      id,
       title,
       year: "2026",
       category,
