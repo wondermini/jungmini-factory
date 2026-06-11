@@ -1,4 +1,4 @@
-import { readdirSync, writeFileSync } from "node:fs";
+import { readFileSync, readdirSync, statSync, writeFileSync } from "node:fs";
 import { extname, join, parse } from "node:path";
 
 const imageExtensions = new Set([".jpg", ".jpeg", ".png", ".webp", ".gif"]);
@@ -36,6 +36,10 @@ const folders = [
   ["works", "Work"],
 ];
 
+const orderConfig = JSON.parse(readFileSync("works-order.json", "utf8"));
+const categoryOrder = orderConfig.categoryOrder || [];
+const pinnedIds = orderConfig.pinnedIds || [];
+
 const slugify = (value) =>
   value
     .toLowerCase()
@@ -57,7 +61,13 @@ const addFolderWorks = (folder, category) => {
   let files = [];
 
   try {
-    files = readdirSync(directory);
+    files = readdirSync(directory)
+      .map((file) => ({
+        file,
+        modified: statSync(join(directory, file)).mtimeMs,
+      }))
+      .sort((a, b) => b.modified - a.modified)
+      .map(({ file }) => file);
   } catch {
     return;
   }
@@ -80,9 +90,7 @@ const addFolderWorks = (folder, category) => {
   }
 };
 
-addFolderWorks("personal", "Personal Work");
-
-works.push(...stickerWorks.map(([id, title, category, image, pdf]) => ({
+works.push(...stickerWorks.map(([id, title, category, image, pdf], index) => ({
   id,
   title,
   year: "2026",
@@ -91,15 +99,34 @@ works.push(...stickerWorks.map(([id, title, category, image, pdf]) => ({
   note: category === "Event / Sticker" ? "Sticker design used for AWSKRUG Seoul Summit 2026." : "Sticker design.",
   image: `./${image}`,
   pdf: `./${pdf}`,
+  originalIndex: index,
 })));
 
 for (const [folder, category] of folders) {
-  if (folder === "personal") continue;
   addFolderWorks(folder, category);
 }
 
-const numberedWorks = works.map((work, index) => ({
+const orderIndex = (items, value) => {
+  const index = items.indexOf(value);
+  return index === -1 ? Number.MAX_SAFE_INTEGER : index;
+};
+
+const orderedWorks = works.sort((first, second) => {
+  const pinnedDifference =
+    orderIndex(pinnedIds, first.id) - orderIndex(pinnedIds, second.id);
+  if (pinnedDifference !== 0) return pinnedDifference;
+
+  const categoryDifference =
+    orderIndex(categoryOrder, first.category) -
+    orderIndex(categoryOrder, second.category);
+  if (categoryDifference !== 0) return categoryDifference;
+
+  return (first.originalIndex ?? 0) - (second.originalIndex ?? 0);
+});
+
+const numberedWorks = orderedWorks.map((work, index) => ({
   ...work,
+  originalIndex: undefined,
   number: `No.${String(index + 1).padStart(3, "0")}`,
 }));
 

@@ -47,3 +47,10 @@ node scripts/sync-works.mjs
 - `images/goods`: 굿즈 작업
 - `images/characters`: 캐릭터 작업
 - `images/works`: 기타 작업
+
+정렬은 `works-order.json`에서 관리합니다.
+
+- `categoryOrder`: 작업 종류별 표시 순서
+- `pinnedIds`: 특정 작업을 맨 위에 고정하고 싶을 때 쓰는 작업 id 목록
+
+새로 추가한 이미지들은 같은 종류 안에서 파일 수정 시간이 최신인 순서로 먼저 나옵니다.
