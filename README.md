@@ -33,3 +33,17 @@ python3 -m http.server 8000
 - `mailto:` 주소와 SNS 링크를 실제 계정으로 변경
 - 작품 이미지를 넣고 싶다면 각 `.work-image` 영역을 `img` 태그로 바꾸거나 배경 이미지로 변경
 - 섹션을 더 늘리고 싶다면 `Works` 아래에 프로젝트 상세 블록을 추가
+
+## 새 작업 추가하기
+
+이미지를 아래 폴더 중 하나에 넣은 뒤 동기화 스크립트를 실행하면 첫 페이지 그리드와 상세 페이지에 자동으로 추가됩니다.
+
+```bash
+node scripts/sync-works.mjs
+```
+
+- `images/personal`: 개인 작업
+- `images/events`: 이벤트 작업
+- `images/goods`: 굿즈 작업
+- `images/characters`: 캐릭터 작업
+- `images/works`: 기타 작업
