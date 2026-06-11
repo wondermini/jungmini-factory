@@ -72,7 +72,7 @@ const addFolderWorks = (folder, category) => {
     return;
   }
 
-  for (const file of files.sort((a, b) => a.localeCompare(b))) {
+  for (const file of files) {
     const extension = extname(file).toLowerCase();
     if (!imageExtensions.has(extension)) continue;
 
@@ -84,6 +84,7 @@ const addFolderWorks = (folder, category) => {
       category,
       format: "Image",
       note: `${category} by Jungmini.`,
+      tags: category === "Personal Work" ? ["#PersonalWork"] : [],
       image: `./images/${folder}/${file}`,
       pdf: "",
     });
@@ -92,11 +93,12 @@ const addFolderWorks = (folder, category) => {
 
 works.push(...stickerWorks.map(([id, title, category, image, pdf], index) => ({
   id,
-  title,
+  title: "AWS SUMMIT 2026",
   year: "2026",
-  category,
+  category: "Sticker",
   format: "PDF, sticker design",
-  note: category === "Event / Sticker" ? "Sticker design used for AWSKRUG Seoul Summit 2026." : "Sticker design.",
+  note: `${title} sticker design for AWS SUMMIT 2026.`,
+  tags: ["#CharacterDesign", "#StickerDesign", "#AWSKRUG"],
   image: `./${image}`,
   pdf: `./${pdf}`,
   originalIndex: index,

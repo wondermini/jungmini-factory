@@ -6,6 +6,9 @@ window.JUNGMINI_WORKS = [
     "category": "Personal Work",
     "format": "Image",
     "note": "Personal Work by Jungmini.",
+    "tags": [
+      "#PersonalWork"
+    ],
     "image": "./images/personal/Gemini_Generated_Image_5okxiy5okxiy5okx.png",
     "pdf": "",
     "number": "No.001"
@@ -17,248 +20,361 @@ window.JUNGMINI_WORKS = [
     "category": "Personal Work",
     "format": "Image",
     "note": "Personal Work by Jungmini.",
+    "tags": [
+      "#PersonalWork"
+    ],
     "image": "./images/personal/Gemini_Generated_Image_h9m3mdh9m3mdh9m3.png",
     "pdf": "",
     "number": "No.002"
   },
   {
     "id": "awskrug-seoul-summit-2026",
-    "title": "AWSKRUG Seoul Summit 2026",
+    "title": "AWS SUMMIT 2026",
     "year": "2026",
-    "category": "Event / Sticker",
+    "category": "Sticker",
     "format": "PDF, sticker design",
-    "note": "Sticker design used for AWSKRUG Seoul Summit 2026.",
+    "note": "AWSKRUG Seoul Summit 2026 sticker design for AWS SUMMIT 2026.",
+    "tags": [
+      "#CharacterDesign",
+      "#StickerDesign",
+      "#AWSKRUG"
+    ],
     "image": "./images/thumbs/awskrug-seoul-summit-2026.png",
     "pdf": "./files/awskrug sticker_seoul sumit_2026.pdf",
     "number": "No.003"
   },
   {
     "id": "ausg",
-    "title": "AUSG",
+    "title": "AWS SUMMIT 2026",
     "year": "2026",
     "category": "Sticker",
     "format": "PDF, sticker design",
-    "note": "Sticker design.",
+    "note": "AUSG sticker design for AWS SUMMIT 2026.",
+    "tags": [
+      "#CharacterDesign",
+      "#StickerDesign",
+      "#AWSKRUG"
+    ],
     "image": "./images/thumbs/ausg.png",
     "pdf": "./files/ausg.pdf",
     "number": "No.004"
   },
   {
     "id": "busan",
-    "title": "Busan",
+    "title": "AWS SUMMIT 2026",
     "year": "2026",
     "category": "Sticker",
     "format": "PDF, sticker design",
-    "note": "Sticker design.",
+    "note": "Busan sticker design for AWS SUMMIT 2026.",
+    "tags": [
+      "#CharacterDesign",
+      "#StickerDesign",
+      "#AWSKRUG"
+    ],
     "image": "./images/thumbs/busan.png",
     "pdf": "./files/busan.pdf",
     "number": "No.005"
   },
   {
     "id": "frontend",
-    "title": "Frontend",
+    "title": "AWS SUMMIT 2026",
     "year": "2026",
     "category": "Sticker",
     "format": "PDF, sticker design",
-    "note": "Sticker design.",
+    "note": "Frontend sticker design for AWS SUMMIT 2026.",
+    "tags": [
+      "#CharacterDesign",
+      "#StickerDesign",
+      "#AWSKRUG"
+    ],
     "image": "./images/thumbs/frontend.png",
     "pdf": "./files/frontend.pdf",
     "number": "No.006"
   },
   {
     "id": "kiro-and-grumi-love",
-    "title": "Kiro and Grumi Love",
+    "title": "AWS SUMMIT 2026",
     "year": "2026",
     "category": "Sticker",
     "format": "PDF, sticker design",
-    "note": "Sticker design.",
+    "note": "Kiro and Grumi Love sticker design for AWS SUMMIT 2026.",
+    "tags": [
+      "#CharacterDesign",
+      "#StickerDesign",
+      "#AWSKRUG"
+    ],
     "image": "./images/thumbs/kiro-and-grumi-love.png",
     "pdf": "./files/kiro and grumi love.pdf",
     "number": "No.007"
   },
   {
     "id": "women-in-cloud",
-    "title": "Women in Cloud",
+    "title": "AWS SUMMIT 2026",
     "year": "2026",
     "category": "Sticker",
     "format": "PDF, sticker design",
-    "note": "Sticker design.",
+    "note": "Women in Cloud sticker design for AWS SUMMIT 2026.",
+    "tags": [
+      "#CharacterDesign",
+      "#StickerDesign",
+      "#AWSKRUG"
+    ],
     "image": "./images/thumbs/women-in-cloud.png",
     "pdf": "./files/women in cloud.pdf",
     "number": "No.008"
   },
   {
     "id": "architecture",
-    "title": "Architecture",
+    "title": "AWS SUMMIT 2026",
     "year": "2026",
     "category": "Sticker",
     "format": "PDF, sticker design",
-    "note": "Sticker design.",
+    "note": "Architecture sticker design for AWS SUMMIT 2026.",
+    "tags": [
+      "#CharacterDesign",
+      "#StickerDesign",
+      "#AWSKRUG"
+    ],
     "image": "./images/thumbs/architecture.png",
     "pdf": "./files/Architecture.pdf",
     "number": "No.009"
   },
   {
     "id": "devops",
-    "title": "DevOps",
+    "title": "AWS SUMMIT 2026",
     "year": "2026",
     "category": "Sticker",
     "format": "PDF, sticker design",
-    "note": "Sticker design.",
+    "note": "DevOps sticker design for AWS SUMMIT 2026.",
+    "tags": [
+      "#CharacterDesign",
+      "#StickerDesign",
+      "#AWSKRUG"
+    ],
     "image": "./images/thumbs/devops.png",
     "pdf": "./files/DevOps.pdf",
     "number": "No.010"
   },
   {
     "id": "gametech",
-    "title": "Gametech",
+    "title": "AWS SUMMIT 2026",
     "year": "2026",
     "category": "Sticker",
     "format": "PDF, sticker design",
-    "note": "Sticker design.",
+    "note": "Gametech sticker design for AWS SUMMIT 2026.",
+    "tags": [
+      "#CharacterDesign",
+      "#StickerDesign",
+      "#AWSKRUG"
+    ],
     "image": "./images/thumbs/gametech.png",
     "pdf": "./files/gametech.pdf",
     "number": "No.011"
   },
   {
     "id": "serverless",
-    "title": "Serverless",
+    "title": "AWS SUMMIT 2026",
     "year": "2026",
     "category": "Sticker",
     "format": "PDF, sticker design",
-    "note": "Sticker design.",
+    "note": "Serverless sticker design for AWS SUMMIT 2026.",
+    "tags": [
+      "#CharacterDesign",
+      "#StickerDesign",
+      "#AWSKRUG"
+    ],
     "image": "./images/thumbs/severless.png",
     "pdf": "./files/severless.pdf",
     "number": "No.012"
   },
   {
     "id": "security",
-    "title": "Security",
+    "title": "AWS SUMMIT 2026",
     "year": "2026",
     "category": "Sticker",
     "format": "PDF, sticker design",
-    "note": "Sticker design.",
+    "note": "Security sticker design for AWS SUMMIT 2026.",
+    "tags": [
+      "#CharacterDesign",
+      "#StickerDesign",
+      "#AWSKRUG"
+    ],
     "image": "./images/thumbs/security.png",
     "pdf": "./files/ security.pdf",
     "number": "No.013"
   },
   {
     "id": "data",
-    "title": "Data",
+    "title": "AWS SUMMIT 2026",
     "year": "2026",
     "category": "Sticker",
     "format": "PDF, sticker design",
-    "note": "Sticker design.",
+    "note": "Data sticker design for AWS SUMMIT 2026.",
+    "tags": [
+      "#CharacterDesign",
+      "#StickerDesign",
+      "#AWSKRUG"
+    ],
     "image": "./images/thumbs/data.png",
     "pdf": "./files/data.pdf",
     "number": "No.014"
   },
   {
     "id": "kiro-ghost-gurumi",
-    "title": "Kiro Ghost Gurumi",
+    "title": "AWS SUMMIT 2026",
     "year": "2026",
     "category": "Sticker",
     "format": "PDF, sticker design",
-    "note": "Sticker design.",
+    "note": "Kiro Ghost Gurumi sticker design for AWS SUMMIT 2026.",
+    "tags": [
+      "#CharacterDesign",
+      "#StickerDesign",
+      "#AWSKRUG"
+    ],
     "image": "./images/thumbs/kiro-ghost-gurumi.png",
     "pdf": "./files/kiro ghost gurumi.pdf",
     "number": "No.015"
   },
   {
     "id": "iot",
-    "title": "IoT",
+    "title": "AWS SUMMIT 2026",
     "year": "2026",
     "category": "Sticker",
     "format": "PDF, sticker design",
-    "note": "Sticker design.",
+    "note": "IoT sticker design for AWS SUMMIT 2026.",
+    "tags": [
+      "#CharacterDesign",
+      "#StickerDesign",
+      "#AWSKRUG"
+    ],
     "image": "./images/thumbs/iot.png",
     "pdf": "./files/IOT.pdf",
     "number": "No.016"
   },
   {
     "id": "platform",
-    "title": "Platform",
+    "title": "AWS SUMMIT 2026",
     "year": "2026",
     "category": "Sticker",
     "format": "PDF, sticker design",
-    "note": "Sticker design.",
+    "note": "Platform sticker design for AWS SUMMIT 2026.",
+    "tags": [
+      "#CharacterDesign",
+      "#StickerDesign",
+      "#AWSKRUG"
+    ],
     "image": "./images/thumbs/platform.png",
     "pdf": "./files/plateform.pdf",
     "number": "No.017"
   },
   {
     "id": "magok",
-    "title": "Magok",
+    "title": "AWS SUMMIT 2026",
     "year": "2026",
     "category": "Sticker",
     "format": "PDF, sticker design",
-    "note": "Sticker design.",
+    "note": "Magok sticker design for AWS SUMMIT 2026.",
+    "tags": [
+      "#CharacterDesign",
+      "#StickerDesign",
+      "#AWSKRUG"
+    ],
     "image": "./images/thumbs/magok.png",
     "pdf": "./files/magok.pdf",
     "number": "No.018"
   },
   {
     "id": "inchun",
-    "title": "Inchun",
+    "title": "AWS SUMMIT 2026",
     "year": "2026",
     "category": "Sticker",
     "format": "PDF, sticker design",
-    "note": "Sticker design.",
+    "note": "Inchun sticker design for AWS SUMMIT 2026.",
+    "tags": [
+      "#CharacterDesign",
+      "#StickerDesign",
+      "#AWSKRUG"
+    ],
     "image": "./images/thumbs/inchun.png",
     "pdf": "./files/inchun.pdf",
     "number": "No.019"
   },
   {
     "id": "euljiro",
-    "title": "Euljiro",
+    "title": "AWS SUMMIT 2026",
     "year": "2026",
     "category": "Sticker",
     "format": "PDF, sticker design",
-    "note": "Sticker design.",
+    "note": "Euljiro sticker design for AWS SUMMIT 2026.",
+    "tags": [
+      "#CharacterDesign",
+      "#StickerDesign",
+      "#AWSKRUG"
+    ],
     "image": "./images/thumbs/euljiro.png",
     "pdf": "./files/euljiro.pdf",
     "number": "No.020"
   },
   {
     "id": "certified",
-    "title": "Certified",
+    "title": "AWS SUMMIT 2026",
     "year": "2026",
     "category": "Sticker",
     "format": "PDF, sticker design",
-    "note": "Sticker design.",
+    "note": "Certified sticker design for AWS SUMMIT 2026.",
+    "tags": [
+      "#CharacterDesign",
+      "#StickerDesign",
+      "#AWSKRUG"
+    ],
     "image": "./images/thumbs/certified.png",
     "pdf": "./files/certified.pdf",
     "number": "No.021"
   },
   {
     "id": "guro",
-    "title": "Guro",
+    "title": "AWS SUMMIT 2026",
     "year": "2026",
     "category": "Sticker",
     "format": "PDF, sticker design",
-    "note": "Sticker design.",
+    "note": "Guro sticker design for AWS SUMMIT 2026.",
+    "tags": [
+      "#CharacterDesign",
+      "#StickerDesign",
+      "#AWSKRUG"
+    ],
     "image": "./images/thumbs/guro.png",
     "pdf": "./files/guro.pdf",
     "number": "No.022"
   },
   {
     "id": "container",
-    "title": "Container",
+    "title": "AWS SUMMIT 2026",
     "year": "2026",
     "category": "Sticker",
     "format": "PDF, sticker design",
-    "note": "Sticker design.",
+    "note": "Container sticker design for AWS SUMMIT 2026.",
+    "tags": [
+      "#CharacterDesign",
+      "#StickerDesign",
+      "#AWSKRUG"
+    ],
     "image": "./images/thumbs/container.png",
     "pdf": "./files/container.pdf",
     "number": "No.023"
   },
   {
     "id": "beginner",
-    "title": "Beginner",
+    "title": "AWS SUMMIT 2026",
     "year": "2026",
     "category": "Sticker",
     "format": "PDF, sticker design",
-    "note": "Sticker design.",
+    "note": "Beginner sticker design for AWS SUMMIT 2026.",
+    "tags": [
+      "#CharacterDesign",
+      "#StickerDesign",
+      "#AWSKRUG"
+    ],
     "image": "./images/thumbs/beginner.png",
     "pdf": "./files/beginner.pdf",
     "number": "No.024"

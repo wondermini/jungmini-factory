@@ -232,6 +232,11 @@ h3 {
   color: var(--muted);
 }
 
+.tag-list {
+  color: var(--muted);
+  word-spacing: 0.25em;
+}
+
 .pdf-link {
   display: inline-block;
   margin-top: 22px;

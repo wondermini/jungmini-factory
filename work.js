@@ -19,6 +19,7 @@ document.getElementById("detail-year").textContent = work.year;
 document.getElementById("detail-category").textContent = work.category;
 document.getElementById("detail-format").textContent = work.format;
 document.getElementById("detail-note").textContent = work.note;
+document.getElementById("detail-tags").textContent = (work.tags || []).join(" ");
 
 const image = document.getElementById("detail-image");
 image.src = work.image;
