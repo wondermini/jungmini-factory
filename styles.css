@@ -233,7 +233,8 @@ h3 {
 }
 
 .tag-list {
-  color: var(--muted);
+  margin: 56px 0 0;
+  font-weight: 700;
   word-spacing: 0.25em;
 }
 
