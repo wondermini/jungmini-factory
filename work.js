@@ -23,6 +23,7 @@ document.getElementById("detail-note").textContent = work.note;
 const image = document.getElementById("detail-image");
 image.src = work.image;
 image.alt = `${work.title} image`;
+image.classList.toggle("personal-work-image", work.category === "Personal Work");
 
 const pdf = document.getElementById("detail-pdf");
 if (work.pdf) {
