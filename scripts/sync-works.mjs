@@ -59,6 +59,11 @@ const customTitles = new Map([
   ["personal-gemini-generated-image-h9m3mdh9m3mdh9m3", "Kitty on My Hat 🐱🎩"],
 ]);
 
+const customImageVersions = new Map([
+  ["personal-gemini-generated-image-5okxiy5okxiy5okx", "20260611-clean"],
+  ["personal-gemini-generated-image-h9m3mdh9m3mdh9m3", "20260611-clean"],
+]);
+
 const works = [];
 
 const addFolderWorks = (folder, category) => {
@@ -83,6 +88,7 @@ const addFolderWorks = (folder, category) => {
 
     const id = `${folder}-${slugify(file)}`;
     const title = customTitles.get(id) || titleize(file);
+    const imageVersion = customImageVersions.get(id);
     works.push({
       id,
       title,
@@ -91,7 +97,7 @@ const addFolderWorks = (folder, category) => {
       format: "Image",
       note: `${category} by Jungmini.`,
       tags: category === "Personal Work" ? ["#PersonalWork"] : [],
-      image: `./images/${folder}/${file}`,
+      image: `./images/${folder}/${file}${imageVersion ? `?v=${imageVersion}` : ""}`,
       pdf: "",
     });
   }

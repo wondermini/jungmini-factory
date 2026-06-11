@@ -9,7 +9,7 @@ window.JUNGMINI_WORKS = [
     "tags": [
       "#PersonalWork"
     ],
-    "image": "./images/personal/Gemini_Generated_Image_5okxiy5okxiy5okx.png",
+    "image": "./images/personal/Gemini_Generated_Image_5okxiy5okxiy5okx.png?v=20260611-clean",
     "pdf": "",
     "number": "No.001"
   },
@@ -23,7 +23,7 @@ window.JUNGMINI_WORKS = [
     "tags": [
       "#PersonalWork"
     ],
-    "image": "./images/personal/Gemini_Generated_Image_h9m3mdh9m3mdh9m3.png",
+    "image": "./images/personal/Gemini_Generated_Image_h9m3mdh9m3mdh9m3.png?v=20260611-clean",
     "pdf": "",
     "number": "No.002"
   },
