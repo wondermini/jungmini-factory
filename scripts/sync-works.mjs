@@ -29,10 +29,10 @@ const stickerWorks = [
 ];
 
 const folders = [
+  ["personal", "Personal Work"],
   ["events", "Event"],
   ["goods", "Goods"],
   ["characters", "Character"],
-  ["personal", "Personal Work"],
   ["works", "Work"],
 ];
 
@@ -50,25 +50,16 @@ const titleize = (value) =>
     .trim()
     .replace(/\b[a-z]/g, (letter) => letter.toUpperCase());
 
-const works = stickerWorks.map(([id, title, category, image, pdf]) => ({
-  id,
-  title,
-  year: "2026",
-  category,
-  format: "PDF, sticker design",
-  note: category === "Event / Sticker" ? "Sticker design used for AWSKRUG Seoul Summit 2026." : "Sticker design.",
-  image: `./${image}`,
-  pdf: `./${pdf}`,
-}));
+const works = [];
 
-for (const [folder, category] of folders) {
+const addFolderWorks = (folder, category) => {
   const directory = join("images", folder);
   let files = [];
 
   try {
     files = readdirSync(directory);
   } catch {
-    continue;
+    return;
   }
 
   for (const file of files.sort((a, b) => a.localeCompare(b))) {
@@ -87,6 +78,24 @@ for (const [folder, category] of folders) {
       pdf: "",
     });
   }
+};
+
+addFolderWorks("personal", "Personal Work");
+
+works.push(...stickerWorks.map(([id, title, category, image, pdf]) => ({
+  id,
+  title,
+  year: "2026",
+  category,
+  format: "PDF, sticker design",
+  note: category === "Event / Sticker" ? "Sticker design used for AWSKRUG Seoul Summit 2026." : "Sticker design.",
+  image: `./${image}`,
+  pdf: `./${pdf}`,
+})));
+
+for (const [folder, category] of folders) {
+  if (folder === "personal") continue;
+  addFolderWorks(folder, category);
 }
 
 const numberedWorks = works.map((work, index) => ({
