@@ -65,6 +65,18 @@ const manualWorks = [
     pdf: "./files/roboco-t-shirt-logo.pdf",
     originalIndex: 10000,
   },
+  {
+    id: "jawsday-2026-sticker",
+    title: "JAWSDAY 2026 sticker",
+    year: "2026",
+    category: "Sticker",
+    format: "Image, sticker design",
+    note: "Sticker design for JAWSDAY 2026.",
+    tags: ["#CharacterDesign", "#StickerDesign", "#JAWSDAY"],
+    image: "./images/thumbs/jawsday-2026-sticker.png",
+    pdf: "",
+    originalIndex: 10001,
+  },
 ];
 
 const folders = [

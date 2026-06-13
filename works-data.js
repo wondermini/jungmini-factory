@@ -426,5 +426,21 @@ window.JUNGMINI_WORKS = [
     "image": "./images/thumbs/roboco-t-shirt-logo.png?v=20260613-wide",
     "pdf": "./files/roboco-t-shirt-logo.pdf",
     "number": "No.027"
+  },
+  {
+    "id": "jawsday-2026-sticker",
+    "title": "JAWSDAY 2026 sticker",
+    "year": "2026",
+    "category": "Sticker",
+    "format": "Image, sticker design",
+    "note": "Sticker design for JAWSDAY 2026.",
+    "tags": [
+      "#CharacterDesign",
+      "#StickerDesign",
+      "#JAWSDAY"
+    ],
+    "image": "./images/thumbs/jawsday-2026-sticker.png",
+    "pdf": "",
+    "number": "No.028"
   }
 ];
