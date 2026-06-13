@@ -25,15 +25,14 @@ const image = document.getElementById("detail-image");
 image.src = work.image;
 image.alt = `${work.title} image`;
 image.classList.toggle("personal-work-image", work.category === "Personal Work");
-
-const pdf = document.getElementById("detail-pdf");
-if (work.pdf) {
-  pdf.href = work.pdf;
-  pdf.textContent = "Open PDF";
-} else {
-  pdf.href = work.image;
-  pdf.textContent = "Open Image";
-}
+image.classList.toggle(
+  "no-shadow-image",
+  [
+    "roboco-t-shirt-logo",
+    "roboco-summer-t-shirt-2026",
+    "roboco-t-shirt-2026-summer-yellow",
+  ].includes(work.id)
+);
 
 const previous = works[currentIndex - 1];
 const next = works[currentIndex + 1];

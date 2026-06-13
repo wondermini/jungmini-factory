@@ -155,8 +155,8 @@ h3 {
 
 .works-grid {
   display: grid;
-  grid-template-columns: repeat(7, minmax(0, 1fr));
-  gap: 48px 72px;
+  grid-template-columns: repeat(auto-fill, minmax(clamp(96px, 10vw, 150px), 1fr));
+  gap: clamp(26px, 3.2vw, 44px) clamp(24px, 3vw, 46px);
   align-items: center;
 }
 
@@ -167,7 +167,7 @@ h3 {
 
 .work-item img {
   display: block;
-  width: 115%;
+  width: min(100%, 150px);
   justify-self: center;
   aspect-ratio: 1;
   background: transparent;
@@ -182,6 +182,23 @@ h3 {
 
 .work-item-personal-work img {
   filter: none;
+}
+
+.work-item-no-shadow img {
+  filter: none;
+}
+
+.work-item-wide-logo {
+  grid-column: auto;
+  justify-self: center;
+}
+
+.work-item-wide-logo img {
+  width: auto !important;
+  height: clamp(82px, 8vw, 140px) !important;
+  max-width: min(100%, 210px);
+  max-height: none !important;
+  aspect-ratio: auto !important;
 }
 
 .breadcrumb {
@@ -204,7 +221,7 @@ h3 {
 
 .detail-image-wrap img {
   display: block;
-  width: 25%;
+  width: 62.5%;
   margin: 0 auto;
   background: transparent;
   filter:
@@ -217,6 +234,10 @@ h3 {
 }
 
 .detail-image-wrap img.personal-work-image {
+  filter: none;
+}
+
+.detail-image-wrap img.no-shadow-image {
   filter: none;
 }
 
@@ -356,8 +377,8 @@ h3 {
   }
 
   .works-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 28px 24px;
+    grid-template-columns: repeat(auto-fill, minmax(84px, 1fr));
+    gap: 26px 18px;
   }
 
   .detail-layout {
@@ -378,5 +399,16 @@ h3 {
   .work-item:nth-child(n) {
     grid-column: auto;
     transform: none;
+  }
+
+  .work-item-wide-logo {
+    grid-column: auto;
+  }
+
+  .work-item-wide-logo img {
+    width: auto !important;
+    height: clamp(64px, 18vw, 100px) !important;
+    max-width: 100%;
+    max-height: none !important;
   }
 }

@@ -378,5 +378,53 @@ window.JUNGMINI_WORKS = [
     "image": "./images/thumbs/beginner.png",
     "pdf": "./files/beginner.pdf",
     "number": "No.024"
+  },
+  {
+    "id": "roboco-summer-t-shirt-2026",
+    "title": "ROBOCO T SHIRT 2026 summer",
+    "year": "2026",
+    "category": "Work",
+    "format": "Image, T-shirt mockup",
+    "note": "T-shirt mockup featuring the ROBOCO logo design.",
+    "tags": [
+      "#TShirtDesign",
+      "#GoodsDesign",
+      "#LogoDesign"
+    ],
+    "image": "./images/thumbs/roboco-summer-t-shirt-2026.png?v=20260613-yellow",
+    "pdf": "",
+    "number": "No.025"
+  },
+  {
+    "id": "roboco-t-shirt-2026-summer-yellow",
+    "title": "ROBOCO T SHIRT 2026 SUMMER",
+    "year": "2026",
+    "category": "Work",
+    "format": "Image, T-shirt mockup",
+    "note": "T-shirt mockup featuring the ROBOCO logo design.",
+    "tags": [
+      "#TShirtDesign",
+      "#GoodsDesign",
+      "#LogoDesign"
+    ],
+    "image": "./images/thumbs/roboco-t-shirt-2026-summer-yellow.png?v=20260613-pink",
+    "pdf": "",
+    "number": "No.026"
+  },
+  {
+    "id": "roboco-t-shirt-logo",
+    "title": "ROBOCO T SHIRT",
+    "year": "2026",
+    "category": "Work",
+    "format": "PDF, T-shirt logo design",
+    "note": "Logo design created for T-shirt production.",
+    "tags": [
+      "#LogoDesign",
+      "#TShirtDesign",
+      "#GoodsDesign"
+    ],
+    "image": "./images/thumbs/roboco-t-shirt-logo.png?v=20260613-wide",
+    "pdf": "./files/roboco-t-shirt-logo.pdf",
+    "number": "No.027"
   }
 ];
